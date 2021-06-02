@@ -78,3 +78,20 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+#first
+{
+  text-align: center;
+}
+
+#second {
+  text-align: center;
+}
+
+#third {
+  text-align: center;
+}
+
+#fourth {
+  text-align: center;
+}

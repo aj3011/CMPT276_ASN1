@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="calculator.css" rel="stylesheet" type="text/css" />
+    <title>CourSys - Formula Tester</title>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Grade Calculator</h1>
+      <div class="inner">
+        <h3>Activities</h3>
+        <p>Give grades to the numeric activities:</p>
+        <table>
+          <tr class="top-row">
+            <th>Name</th>
+            <th>Short Name</th>
+            <th>Weight</th>
+            <th>Grade</th>
+            <th>Percent</th>
+          </tr>
+          <tr>
+            <td>Activity 1</td>
+            <td>A1</td>
+            <td><input id="w1" type="number" /></td>
+            <td>
+              <input id="a1f1" type="text" />/<input id="a1f2" type="text" />
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Activity 2</td>
+            <td>A2</td>
+            <td><input id="w2" type="text" /></td>
+            <td>
+              <input id="a2f1" type="text" />/<input id="a2f2" type="text" />
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Activity 3</td>
+            <td>A3</td>
+            <td><input id="w3" type="number" /></td>
+            <td>
+              <input id="a3f1" type="text" />/<input id="a3f2" type="text" />
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Activity 4</td>
+            <td>A4</td>
+            <td><input id="w4" type="text" /></td>
+            <td>
+              <input id="a4f1" type="text" />/<input id="a4f2" type="text" />
+            </td>
+            <td></td>
+          </tr>
+        </table>
+        <h3>Result</h3>
+        <div class="btn">
+          <button onclick="calculateWeight()">WEIGHTED</button>
+          <button onclick="calculateMean()">MEAN</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/7.2.0/math.min.js"></script>
+    <script src="calculator.js"></script>
+  </body>
+</html>

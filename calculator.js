@@ -4,22 +4,16 @@ function getValue(id) {
       ? "0"
       : document.getElementById(id).value
   );
-  console.log(typeof value);
   return value;
 }
 
 function calculateWeight() {
-  // var w1 = getValuegetElementById("w1")length == 0
-  //     ? "0"
-  //     : document.getElementById("w1")// );
   var w1 = getValue("w1");
-  console.log("sex" + typeof w1);
 
   var w2 = getValue("w2");
   var w3 = getValue("w3");
 
   var w4 = getValue("w4");
-  console.log(w4);
   var a1f1 = getValue("a1f1");
   var a1f2 = getValue("a1f2");
   var a2f1 = getValue("a2f1");
@@ -36,7 +30,6 @@ function calculateWeight() {
 
   let numerator = 0;
   let denominator = 0;
-  console.log(a2f2);
   if (w1 != 0 && a1f2 != 0) {
     numerator += w1 * (a1f1 / a1f2);
     document.getElementById("first").innerHTML = a1f1 / a1f2;
@@ -67,10 +60,8 @@ function calculateWeight() {
 
 function calculateMean() {
   var w1 = getValue("w1");
-  console.log(w1);
 
   var w4 = getValue("w4");
-  console.log(w4);
   var a1f1 = getValue("a1f1");
   var a1f2 = getValue("a1f2");
   var a2f1 = getValue("a2f1");
@@ -86,7 +77,6 @@ function calculateMean() {
   document.getElementById("second").innerHTML = "-";
   document.getElementById("third").innerHTML = "-";
   document.getElementById("fourth").innerHTML = "-";
-  console.log(w4);
   if (a1f2 != 0) {
     sum += a1f1 / a1f2;
     document.getElementById("first").innerHTML = a1f1 / a1f2;
@@ -110,8 +100,7 @@ function calculateMean() {
     document.getElementById("fourth").innerHTML = a4f1 / a4f2;
     num += 1;
   }
-  console.log(sum + "******" + num);
+
   var mean = sum / num;
   document.getElementById("result").innerHTML = "Result " + mean;
-  console.log(mean);
 }
